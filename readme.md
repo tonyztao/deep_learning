@@ -10,24 +10,24 @@
 下面就是从我个人角度出发，记录的主要知识点。
 
 #### 第一课 神经网络和深度学习
-##### 第一周：[深度学习概述](//神经网络和深度学习//第一周深度学习概述)
+##### 第一周：[深度学习概述](https://github.com/tonyztao/deep_learning/tree/master/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%92%8C%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%AC%AC%E4%B8%80%E5%91%A8%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%A6%82%E8%BF%B0)
 课程主要内容：
 神经网络的概念、深度学习兴起的原因等；
 
-##### 第二周：[神经网络基础](//神经网络和深度学习//第二周神经网络基础)
+##### 第二周：[神经网络基础](https://github.com/tonyztao/deep_learning/tree/master/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%92%8C%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%AC%AC%E4%BA%8C%E5%91%A8%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80)
 课程主要内容：
 逻辑回归的神经网络表示？损失函数的定义？梯度下降法？链式法则？
 对于逻辑回归的向量化的表示；为什么要向量化？
 Python相关：什么是广播？Numpy库的应用等
 
-##### 第三周：[浅层神经网络](//神经网络和深度学习//第三周浅层神经网络)
+##### 第三周：[浅层神经网络](https://github.com/tonyztao/deep_learning/tree/master/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%92%8C%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%AC%AC%E4%B8%89%E5%91%A8%E6%B5%85%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C)
 课程主要内容：
 单隐层神经网络的向量化表示；
 各类激活函数介绍，优缺点，适用场景等；
 为什么需要非线性的激活函数？
 参数的随机初始化的重要性；
 
-##### 第四周：[深层神经网络](//神经网络和深度学习//第四周深层神经网络)
+##### 第四周：[深层神经网络](https://github.com/tonyztao/deep_learning/tree/master/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%92%8C%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%AC%AC%E5%9B%9B%E5%91%A8%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C)
 课程主要内容：
 深层神经网络的向量化表示；
 深层神经网络维数的确定；
