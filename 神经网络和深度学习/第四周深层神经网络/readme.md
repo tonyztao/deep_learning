@@ -32,8 +32,8 @@ $b^{[l]}:\ (n^{[l]},1)$
 
 这里与单个样本不同的是$Z^{[l]} $和 $A^{[l]} $，因为 $A^{[l]}=g^{[l]}( Z^{[l]}) $,故他们两个维度是一致的。
 
- $Z^{[l]}=W^{[l]}A^{[l-1]}+b^{[l]} $，$Z^{[l]} $是m个训练样本横向堆叠而成的，如$\bm{Z^{[1]}}$可扩展成如下公式：
- $\bm{Z^{[1]}}= \left[ \begin{array}{c}
+ $Z^{[l]}=W^{[l]}A^{[l-1]}+b^{[l]} $，$Z^{[l]} $是m个训练样本横向堆叠而成的，如${Z^{[1]}}$可扩展成如下公式：
+ ${Z^{[1]}}= \left[ \begin{array}{c}
 |  & | &... & | \\
 z^{[1](1)}  & z^{[1](2)} &... & z^{[1](m)} \\
 |  & | &... & | 
@@ -91,22 +91,22 @@ $b^{[l]}$ 会被当成$(n^{[l]},m)$矩阵进行运算，这是因为python的广
 
 m个训练样本，向量化形式为：
 
-$\bm Z^{[l]}=\bm W^{[l]}\bm A^{[l-1]}+\bm b^{[l]}$
+$ Z^{[l]}= W^{[l]} A^{[l-1]}+ b^{[l]}$
 
-$\bm A^{[l]}=g^{[l]}(\bm Z^{[l]})$
+$ A^{[l]}=g^{[l]}( Z^{[l]})$
 
 然后是反向传播过程，输入是 $da^{[l]}$ ，输出是 $da^{[l-1]}$,$dw^{[l]}$,$db^{[l]} $。其表达式如下：
 
-$d \bm Z^{[l]}=d \bm A^{[l]}\ast \bm g^{[l]'}(\bm Z^{[l]})$
+$d  Z^{[l]}=d  A^{[l]}\ast  g^{[l]'}( Z^{[l]})$
 
-$d \bm W^{[l]}=\frac1md \bm Z^{[l]}\cdot \bm A^{[l-1]T}$
+$d  W^{[l]}=\frac1md  Z^{[l]}\cdot  A^{[l-1]T}$
 
 
-$d\bm b^{[l]}=\frac1mnp.sum(d \bm Z^{[l]},axis=1,keepdim=True)$
+$d b^{[l]}=\frac1mnp.sum(d  Z^{[l]},axis=1,keepdim=True)$
 
-$d\bm A^{[l-1]}=\bm W^{[l]T}\cdot d\bm Z^{[l]}$
+$d A^{[l-1]}= W^{[l]T}\cdot d Z^{[l]}$
 
-$d\bm Z^{[l]}=\bm W^{[l+1]T}\cdot d\bm Z^{[l+1]}\ast \bm g^{[l]'}(\bm Z^{[l]})$
+$d Z^{[l]}= W^{[l+1]T}\cdot d Z^{[l+1]}\ast  g^{[l]'}( Z^{[l]})$
 
 #### 参数和超参数
 
