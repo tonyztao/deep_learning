@@ -42,6 +42,7 @@ Andrew建议要确保验证集和测试集来自于同一个分布，这样可�
 所以对于bias和variance的tradeoff，对于模型来说是一个十分重要的问题。
 
 上述图形对于二维可进行图形化，但对于高维情况，可通过对比训练集误差和验证集误差来进行判断：
+
 | Type |condition1 | condition2 | condition3|condition4|
 | - | :-: | :-:| :-:| :-:| -: | 
 | Train Set Error | 1%| 15% | 15% | 0.5% | 
