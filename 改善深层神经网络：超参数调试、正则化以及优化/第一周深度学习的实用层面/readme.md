@@ -82,18 +82,27 @@ Conclusion | high variance | high bias |high bias&high variance | low bias&low v
 **Logistic Regression:**
 L1正则化：$J( \omega, b)=\frac{1}{m}\sum\limits_{i=1}^{m}L(\hat y^{(i)},y^{(i)})+\frac{\lambda}{2m}\left \| \omega \right \|_1$
 
-其中$|| \omega ||_1 =\sum\limits_{j=1}^{n_x} || \omega_j ||$
+其中
+![](equation1-1.png)
+
 对于L1正则化，很多$ \omega $会变为0，称为稀疏矩阵。
 
 L2正则化：$J( \omega, b)=\frac{1}{m}\sum\limits_{i=1}^{m}L(\hat y^{(i)},y^{(i)})+\frac{\lambda}{2m}|| \omega ||_2^{2}$
-其中$|| \omega ||_2 =\sum\limits_{j=1}^{n_x} \omega_j^2=\omega^T\omega$
+其中
+
+![](equation1-2.png)
+
 对于L2正则化，会使得权重$ \omega $衰减较小。
 
 **neutral network:**
 神经网络加入正则化项的代价函数后的公式为：
 $J(w^{[1]},b^{[1]},\cdots,w^{[L]},b^{[L]})=\dfrac{1}{m}\sum\limits_{i=1}^{m}l(\hat y^{(i)},y^{(i)})+\dfrac{\lambda}{2m}\sum\limits_{l=1}^{L}||w^{[l]}||_{F}^{2}$
 
-其中 $||w^{[l]}||_{F}^{2}=\sum\limits_{i=1}^{n^{[l-1]}}\sum\limits_{j=1}^{n^{[l]}}(w_{ij}^{[l]})^{2}$ ，因为 $ \omega $ 的大小为 $ (n^{[l-1]},n^{[l]}) $，该矩阵范数被称为Frobenius范数，简称F-范数，是一种矩阵范数，记为||·||F。矩阵A的Frobenius范数定义为矩阵A各项元素的绝对值平方的总和。
+其中 
+
+![](equation2-1.png)
+
+因为 $ \omega $ 的大小为 $ (n^{[l-1]},n^{[l]}) $，该矩阵范数被称为Frobenius范数，简称F-范数，是一种矩阵范数，记为||·||F。矩阵A的Frobenius范数定义为矩阵A各项元素的绝对值平方的总和。
 
 **计算一下梯度下降,为什么称L2正则为系数衰减**
 在加入正则化项后，梯度变为：
@@ -258,7 +267,8 @@ $d\theta_{appr}^{i}=\frac{J(\theta_1,\theta_2,...,\theta_i+\varepsilon,..)-J(\th
 
 这里要判断的是$d\theta_{appr} \approx d\theta $
 判断公式：
-$\dfrac {||d\theta_{approx}-d\theta||_{2}}{||d\theta_{approx}||_{2}+||d\theta||_{2}}$
+
+![](equation3.png)
 
 其中，“$ ||\cdot ||_{2}$ ”表示欧几里得范数，它是误差平方之和，然后求平方根，得到的欧氏距离。
 
