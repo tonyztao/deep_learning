@@ -90,24 +90,111 @@ Mini-Batch Norm归一化介绍、实现方法以及背后的原理;
 softmax多分类模型的介绍;
 
 #### 第三课 结构化机器学习项目
-##### 第一周：[机器学习策略一]()
+##### 第一周：[机器学习策略一](https://github.com/tonyztao/deep_learning/tree/master/%E7%BB%93%E6%9E%84%E5%8C%96%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%A1%B9%E7%9B%AE/%E7%AC%AC%E4%B8%80%E5%91%A8%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AD%96%E7%95%A5(%E4%B8%80))
 课程主要内容：
 
+正交化概念；
 
+单一数字评估指标；
 
-##### 第二周：[机器学习策略二]()
+训练、测试集划分；
+
+偏差和方差；
+
+人的表现；
+
+改善模型表现；
+
+##### 第二周：[机器学习策略二](https://github.com/tonyztao/deep_learning/tree/master/%E7%BB%93%E6%9E%84%E5%8C%96%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%A1%B9%E7%9B%AE/%E7%AC%AC%E4%BA%8C%E5%91%A8%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AD%96%E7%95%A5(%E4%BA%8C))
 课程主要内容：
 
-训练集、测试集和验证集；
+误差分析；
 
-方差和偏差的概念以及应对策略；
+错误样本清除；
 
-正则化方法：L1正则、L2正则、Dropout;
+数据分布不匹配问题；
 
-为什么正则化可以减少过拟合？
+迁移学习；
 
-梯度消失和梯度爆炸;
+多任务学习；
+
+端到端的深度学习等；
 
 #### 第四课 卷积神经网络
+##### 第一周：[卷积神经网络基础](https://github.com/tonyztao/deep_learning/tree/master/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%AC%AC%E4%B8%80%E5%91%A8%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C)
+课程主要内容：
 
-#### 第五课 序列模型
+计算机视觉都有哪些应用？
+
+边缘检测示例；卷积核；
+
+卷积神经网络示例；
+
+Padding、Strid；
+
+池化等；
+
+##### 第二周：[深度卷积网络：实例探究](https://github.com/tonyztao/deep_learning/tree/master/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%AC%AC%E4%BA%8C%E5%91%A8%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6)
+课程主要内容：
+
+经典的卷积网络介绍
+- LeNet-5
+- AlexNet
+- VGG
+- ResNet
+- Inception
+
+迁移学习；
+
+开源实现；
+
+数据扩充；
+
+##### 第三周：[目标检测](https://github.com/tonyztao/deep_learning/tree/master/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%AC%AC%E4%B8%89%E5%91%A8%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B)
+课程主要内容：
+
+目标定位；
+
+目标检测；
+
+卷积的滑动窗口实现；
+
+Bounding Box预测；
+
+交并比；
+
+非极大值抑制；
+
+Anchor Box；
+
+YOLO算法；
+
+##### 第四周：[特殊应用：人脸识别和神经风格转换]()
+
+#### 第五课 [序列模型]()
+
+课程主要内容：
+
+为什么选择序列模型？
+
+循环神经网络模型；
+
+不同类型的循环神经网络；
+
+循环神经网络的梯度消失问题；
+
+GRU
+
+LSTM网络 
+
+双向循环神经网络；
+
+深层循环神经网络；
+
+#### 参考项目
+在整理自己的笔记的时候，参考了如下内容，在此一并表示感谢：
+
+- [完结撒花！吴恩达DeepLearning.ai《深度学习》课程笔记目录总集](https://blog.csdn.net/koala_tree/article/details/79913655)
+- [网易-吴恩达《深度学习》课后练习编程作业和笔记](https://github.com/AlbertHG/Coursera-Deep-Learning-deeplearning.ai)
+- [吴恩达《深度学习》系列课程笔记](http://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/#/)
+- [吴恩达老师的深度学习课程笔记及资源](https://github.com/fengdu78/deeplearning_ai_books)
